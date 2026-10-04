@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🧘 Meditation AI</h1>
+        <p>Real-Time Driver Stress & Wellness Monitoring System</p>
+
+        <div class="camera-box">
+            <h2>Camera Monitoring</h2>
+            <p id="status">Camera is ready</p>
+            <button onclick="startMonitoring()">Start Monitoring</button>
+        </div>
+
+        <div class="result-box">
+            <h2>Wellness Status</h2>
+            <p id="result">Waiting for analysis...</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
